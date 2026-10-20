@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utah AI Safety Hub</title>
-    <meta name="description" content="A community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
+    <meta name="description" content="A new community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
     <meta property="og:title" content="Utah AI Safety Hub">
-    <meta property="og:description" content="A community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
+    <meta property="og:description" content="A new community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://utah-ai-safety-hub.github.io/">
     <meta property="og:site_name" content="Utah AI Safety Hub">
@@ -26,30 +26,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Announcement bar: edit or delete this block as plans change. -->
+    <div class="announce"><div class="wrap">Now forming: our first reading group and kickoff event in Salt Lake City. <a href="contact.html#signup">Get notified →</a></div></div>
     <header class="site-header">
         <div class="wrap">
             <a class="brand" href="index.html">Utah <span>AI Safety</span> Hub</a>
             <nav class="site-nav" aria-label="Main">
-                <a href="index.html" aria-current="page">Home</a>
                 <a href="about.html">About</a>
-                <a href="get-involved.html">Get involved</a>
+                <a href="programs.html">Programs</a>
                 <a href="events.html">Events</a>
                 <a href="resources.html">Resources</a>
-                <a href="contact.html">Contact</a>
+                <a class="button" href="contact.html#signup">Join</a>
                 <button class="theme-toggle" type="button">Dark</button>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main">
 
         <div class="hero">
             <div class="wrap">
-                <h1>Utah AI Safety Hub</h1>
-                <p class="lede">A community on the Wasatch Front for people who want to help advanced AI go well.</p>
+                <h1>Work on AI safety without leaving Utah</h1>
+                <p class="lede">The Utah AI Safety Hub is a new community on the Wasatch Front for people who want to help advanced AI go well. We’re starting with a reading group, co-working, and events in Salt Lake City and Utah County.</p>
                 <div class="actions">
                     <a class="button" href="contact.html#signup">Join the mailing list</a>
-                    <a class="button secondary" href="events.html">See upcoming events</a>
+                    <a class="button secondary" href="programs.html">See what we’re starting</a>
                 </div>
             </div>
             <svg class="ridge" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true">
@@ -60,44 +62,67 @@
 
         <section>
             <div class="wrap">
-                <h2>Why Utah</h2>
-                <p class="section-lede">You don’t need to move to San Francisco or London to work on AI safety. Utah has strong universities, a fast-growing tech industry, and the first state office in the country dedicated to AI policy. What it doesn’t have yet is a place where people who care about AI safety can find each other and get started. We’re building one.</p>
-                <p><a href="about.html">Read more about the hub →</a></p>
-            </div>
-        </section>
-
-        <section>
-            <div class="wrap">
-                <h2>What we’re starting with</h2>
-                <p class="section-lede">We’re starting small, with a few regular activities that anyone can join.</p>
+                <h2>Where do you want to start?</h2>
                 <div class="cards">
-                    <div class="card">
-                        <h3>Reading group</h3>
-                        <p>A weekly discussion group working through an established AI safety curriculum, such as BlueDot Impact’s AGI Strategy course.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Co-working</h3>
-                        <p>A weekly day to work alongside others thinking about AI safety, whether you’re studying, researching, or building.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Events</h3>
-                        <p>Talks, Q&amp;As, and socials in Salt Lake City and Utah County, starting with a kickoff event this fall.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Campus groups</h3>
-                        <p>Student reading groups at the University of Utah, BYU, UVU, and beyond.</p>
-                    </div>
+                    <a class="card" href="programs.html#reading-group">
+                        <h3>I’m new to AI safety</h3>
+                        <p>Join a reading group and learn the basics with others. No background needed.</p>
+                        <span class="arrow">Reading group →</span>
+                    </a>
+                    <a class="card" href="resources.html">
+                        <h3>I want to work on it</h3>
+                        <p>Find courses, fellowships, and people who can help you move into the field.</p>
+                        <span class="arrow">Resources →</span>
+                    </a>
+                    <a class="card" href="contact.html#partner">
+                        <h3>I already work in AI</h3>
+                        <p>Give a talk, lead a discussion, or advise people getting started.</p>
+                        <span class="arrow">Get in touch →</span>
+                    </a>
+                    <a class="card" href="contact.html#partner">
+                        <h3>I represent an organization</h3>
+                        <p>Universities, community groups, and funders: let’s talk about working together.</p>
+                        <span class="arrow">Partner with us →</span>
+                    </a>
                 </div>
             </div>
         </section>
 
         <section>
             <div class="wrap">
-                <h2>Who it’s for</h2>
-                <p class="section-lede">Anyone in Utah who takes the risks and opportunities of advanced AI seriously: students, engineers, researchers, policy professionals, and people from other fields who want to contribute. No prior background in AI safety is needed.</p>
-                <div class="actions">
-                    <a class="button" href="contact.html#signup">Join the mailing list</a>
-                    <a class="button secondary" href="get-involved.html">Ways to get involved</a>
+                <h2>Why AI safety</h2>
+                <p class="section-lede">AI systems are getting more capable quickly. That brings real benefits, but also risks that could be hard to reverse if we get them wrong. Nobody knows exactly how it will go, and thoughtful people disagree about how serious the risks are. What’s clear is that the work of making AI safe still needs many more people, and that there’s room for newcomers to make a difference.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+                <h2>Why Utah</h2>
+                <p class="section-lede">Utah has strong universities, a fast-growing tech industry, and the first state office in the country dedicated to AI policy. What it doesn’t have yet is a place where people who care about AI safety can find each other and get started. We’re building one.</p>
+                <p><a href="about.html">More about the hub →</a></p>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+                <h2>How to join</h2>
+                <div class="numbered">
+                    <div>
+                        <h3>Join the mailing list</h3>
+                        <p>We’ll email you about the first events and reading groups. <a href="contact.html#signup">Sign up</a>.</p>
+                    </div>
+                    <div>
+                        <h3>Come to the kickoff</h3>
+                        <p>Meet others in Utah who care about AI safety. <a href="events.html">See events</a>.</p>
+                    </div>
+                    <div>
+                        <h3>Join a reading group</h3>
+                        <p>Learn the field with a small group, one evening a week.</p>
+                    </div>
+                    <div>
+                        <h3>Help us build it</h3>
+                        <p>We’re looking for a few people to help organize. Tick “Volunteering” when you sign up.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -105,8 +130,37 @@
 
     <footer class="site-footer">
         <div class="wrap">
-            <span>Utah AI Safety Hub · Salt Lake City and Utah County</span>
-            <span>Organized by <a href="https://emiliobarkett.github.io/">Emilio Barkett</a> · <a href="contact.html">Join the mailing list</a></span>
+            <div class="footer-grid">
+                <div>
+                    <a class="brand" href="index.html">Utah <span>AI Safety</span> Hub</a>
+                    <p>A community for people working to make advanced AI go well. Salt Lake City and Utah County, founded 2026.</p>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#reading-group">Reading group</a></li>
+                        <li><a href="programs.html#co-working">Co-working</a></li>
+                        <li><a href="programs.html#campus">Campus groups</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Hub</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#faq">FAQ</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get involved</h4>
+                    <ul>
+                        <li><a href="contact.html#signup">Mailing list</a></li>
+                        <li><a href="contact.html#partner">Partner with us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-note">Organized by <a href="https://emiliobarkett.github.io/">Emilio Barkett</a>. Independent and nonpartisan.</p>
         </div>
     </footer>
     <script src="site.js"></script>

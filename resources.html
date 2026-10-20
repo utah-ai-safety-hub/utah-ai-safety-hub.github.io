@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources · Utah AI Safety Hub</title>
-    <meta name="description" content="A community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
+    <meta name="description" content="A new community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
     <meta property="og:title" content="Resources · Utah AI Safety Hub">
-    <meta property="og:description" content="A community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
+    <meta property="og:description" content="A new community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://utah-ai-safety-hub.github.io/resources.html">
     <meta property="og:site_name" content="Utah AI Safety Hub">
@@ -26,36 +26,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Announcement bar: edit or delete this block as plans change. -->
+    <div class="announce"><div class="wrap">Now forming: our first reading group and kickoff event in Salt Lake City. <a href="contact.html#signup">Get notified →</a></div></div>
     <header class="site-header">
         <div class="wrap">
             <a class="brand" href="index.html">Utah <span>AI Safety</span> Hub</a>
             <nav class="site-nav" aria-label="Main">
-                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="get-involved.html">Get involved</a>
+                <a href="programs.html">Programs</a>
                 <a href="events.html">Events</a>
                 <a href="resources.html" aria-current="page">Resources</a>
-                <a href="contact.html">Contact</a>
+                <a class="button" href="contact.html#signup">Join</a>
                 <button class="theme-toggle" type="button">Dark</button>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main">
 
         <div class="page-head">
             <div class="wrap">
                 <h1>Resources</h1>
-                <p class="lede">Places to start learning, and other groups in Utah and around the world.</p>
+                <p class="lede">Places to start learning, ways into the field, and other groups in Utah and around the world.</p>
             </div>
         </div>
 
         <section>
             <div class="wrap">
-                <h2>Start here</h2>
+                <h2>Start learning</h2>
                 <ul class="plain">
-                    <li><a href="https://bluedot.org/courses">BlueDot Impact courses</a><br><span class="meta">Free online courses, including AGI Strategy and Technical AI Safety. Our reading group follows one of these.</span></li>
+                    <li><a href="https://bluedot.org/courses">BlueDot Impact courses</a><br><span class="meta">Free online courses, including AGI Strategy, Technical AI Safety, and AI governance. Our reading group follows one of these.</span></li>
                     <li><a href="https://lilianang.substack.com/p/we-need-more-local-ai-safety-hubs">We need more local AI safety hubs</a><br><span class="meta">Li-Lian Ang. Why hubs like this one matter.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+                <h2>Ways into the field</h2>
+                <p class="section-lede">Programs run by other organizations that are open to people outside the main AI safety cities.</p>
+                <ul class="plain">
+                    <li><a href="https://kairos-project.org/">SPAR</a><br><span class="meta">A part-time, remote research program that pairs aspiring AI safety researchers with mentors. Run by Kairos.</span></li>
+                    <li><a href="https://pathfinder.kairos-project.org/">Pathfinder Fellowship</a><br><span class="meta">Funding, mentorship, and support for students who organize AI safety groups at their university.</span></li>
+                    <li><a href="https://generatorresidency.org/">Generator Residency</a><br><span class="meta">A paid three-month residency in Berkeley for generalists who want to build AI safety projects.</span></li>
                 </ul>
             </div>
         </section>
@@ -101,8 +115,37 @@
 
     <footer class="site-footer">
         <div class="wrap">
-            <span>Utah AI Safety Hub · Salt Lake City and Utah County</span>
-            <span>Organized by <a href="https://emiliobarkett.github.io/">Emilio Barkett</a> · <a href="contact.html">Join the mailing list</a></span>
+            <div class="footer-grid">
+                <div>
+                    <a class="brand" href="index.html">Utah <span>AI Safety</span> Hub</a>
+                    <p>A community for people working to make advanced AI go well. Salt Lake City and Utah County, founded 2026.</p>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#reading-group">Reading group</a></li>
+                        <li><a href="programs.html#co-working">Co-working</a></li>
+                        <li><a href="programs.html#campus">Campus groups</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Hub</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#faq">FAQ</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get involved</h4>
+                    <ul>
+                        <li><a href="contact.html#signup">Mailing list</a></li>
+                        <li><a href="contact.html#partner">Partner with us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-note">Organized by <a href="https://emiliobarkett.github.io/">Emilio Barkett</a>. Independent and nonpartisan.</p>
         </div>
     </footer>
     <script src="site.js"></script>

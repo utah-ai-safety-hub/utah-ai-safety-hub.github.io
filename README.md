@@ -12,7 +12,7 @@ You can edit any page in the GitHub web editor (open the file and click the penc
 
 - **Events:** edit `events.html`. Copy an existing `<div class="event">` block and change the date, title, place, and description. Move finished events under "Past".
 - **Sign-up form:** the form on `contact.html` posts to the URL in `FORM_ENDPOINT` at the top of `site.js`. Create a free form at [Formspree](https://formspree.io), then paste its URL there. Until then, the form tells visitors that sign-ups open soon.
-- **Shared header and footer:** these are copied into every page, so change all six files when you edit them.
+- **Shared header and footer:** these are copied into every page, so change all six HTML files when you edit them.
 - **Colors and fonts:** these are set at the top of `style.css`.
 
 ## Custom domain

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events · Utah AI Safety Hub</title>
+    <meta name="description" content="A community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
+    <meta property="og:title" content="Events · Utah AI Safety Hub">
+    <meta property="og:description" content="A community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://utah-ai-safety-hub.github.io/events.html">
+    <meta property="og:site_name" content="Utah AI Safety Hub">
+    <link rel="canonical" href="https://utah-ai-safety-hub.github.io/events.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script>
+        (function () {
+            var stored = null;
+            try { stored = localStorage.getItem('theme'); } catch (e) {}
+            var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">Utah <span>AI Safety</span> Hub</a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="get-involved.html">Get involved</a>
+                <a href="events.html" aria-current="page">Events</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <button class="theme-toggle" type="button">Dark</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-head">
+            <div class="wrap">
+                <h1>Events</h1>
+                <p class="lede">Upcoming and past events. <a href="contact.html#signup">Join the mailing list</a> to hear about new events first.</p>
+            </div>
+        </div>
+
+        <section>
+            <div class="wrap">
+                <h2>Upcoming</h2>
+                <!--
+                    To add an event, copy one <div class="event"> block below and edit it.
+                    To move an event to "Past", cut its block and paste it under the Past heading.
+                -->
+                <div class="event">
+                    <div class="event-date">Date TBA</div>
+                    <div>
+                        <h3>Kickoff: AI safety in Utah</h3>
+                        <p class="meta">Salt Lake City · Venue to be announced</p>
+                        <p>A short talk on what AI safety is, why it matters, and what a Utah hub could do, followed by Q&amp;A and time to meet others.</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-date">Weekly, starting after kickoff</div>
+                    <div>
+                        <h3>AGI Strategy reading group</h3>
+                        <p class="meta">Salt Lake City</p>
+                        <p>A weekly discussion group following BlueDot Impact’s AGI Strategy course. No background needed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+                <h2>Past</h2>
+                <p class="meta">None yet. Our first event is coming soon.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>Utah AI Safety Hub · Salt Lake City and Utah County</span>
+            <span>Organized by <a href="https://emiliobarkett.github.io/">Emilio Barkett</a> · <a href="contact.html">Join the mailing list</a></span>
+        </div>
+    </footer>
+    <script src="site.js"></script>
+</body>
+</html>

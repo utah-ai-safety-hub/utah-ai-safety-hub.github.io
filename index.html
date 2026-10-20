@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah AI Safety Hub</title>
+    <meta name="description" content="A community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
+    <meta property="og:title" content="Utah AI Safety Hub">
+    <meta property="og:description" content="A community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://utah-ai-safety-hub.github.io/">
+    <meta property="og:site_name" content="Utah AI Safety Hub">
+    <link rel="canonical" href="https://utah-ai-safety-hub.github.io/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script>
+        (function () {
+            var stored = null;
+            try { stored = localStorage.getItem('theme'); } catch (e) {}
+            var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">Utah <span>AI Safety</span> Hub</a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="get-involved.html">Get involved</a>
+                <a href="events.html">Events</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <button class="theme-toggle" type="button">Dark</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hero">
+            <div class="wrap">
+                <h1>Utah AI Safety Hub</h1>
+                <p class="lede">A community on the Wasatch Front for people who want to help advanced AI go well.</p>
+                <div class="actions">
+                    <a class="button" href="contact.html#signup">Join the mailing list</a>
+                    <a class="button secondary" href="events.html">See upcoming events</a>
+                </div>
+            </div>
+            <svg class="ridge" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true">
+                <path class="back" d="M0 110 L0 70 L120 40 L210 62 L330 18 L440 55 L560 30 L690 66 L800 24 L930 58 L1040 36 L1200 60 L1200 110 Z"/>
+                <path class="front" d="M0 110 L0 88 L150 68 L280 84 L400 58 L520 80 L650 64 L770 86 L900 66 L1030 82 L1200 70 L1200 110 Z"/>
+            </svg>
+        </div>
+
+        <section>
+            <div class="wrap">
+                <h2>Why Utah</h2>
+                <p class="section-lede">You don’t need to move to San Francisco or London to work on AI safety. Utah has strong universities, a fast-growing tech industry, and the first state office in the country dedicated to AI policy. What it doesn’t have yet is a place where people who care about AI safety can find each other and get started. We’re building one.</p>
+                <p><a href="about.html">Read more about the hub →</a></p>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+                <h2>What we’re starting with</h2>
+                <p class="section-lede">We’re starting small, with a few regular activities that anyone can join.</p>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Reading group</h3>
+                        <p>A weekly discussion group working through an established AI safety curriculum, such as BlueDot Impact’s AGI Strategy course.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Co-working</h3>
+                        <p>A weekly day to work alongside others thinking about AI safety, whether you’re studying, researching, or building.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Events</h3>
+                        <p>Talks, Q&amp;As, and socials in Salt Lake City and Utah County, starting with a kickoff event this fall.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Campus groups</h3>
+                        <p>Student reading groups at the University of Utah, BYU, UVU, and beyond.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+                <h2>Who it’s for</h2>
+                <p class="section-lede">Anyone in Utah who takes the risks and opportunities of advanced AI seriously: students, engineers, researchers, policy professionals, and people from other fields who want to contribute. No prior background in AI safety is needed.</p>
+                <div class="actions">
+                    <a class="button" href="contact.html#signup">Join the mailing list</a>
+                    <a class="button secondary" href="get-involved.html">Ways to get involved</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>Utah AI Safety Hub · Salt Lake City and Utah County</span>
+            <span>Organized by <a href="https://emiliobarkett.github.io/">Emilio Barkett</a> · <a href="contact.html">Join the mailing list</a></span>
+        </div>
+    </footer>
+    <script src="site.js"></script>
+</body>
+</html>

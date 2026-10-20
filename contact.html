@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact · Utah AI Safety Hub</title>
+    <meta name="description" content="A community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
+    <meta property="og:title" content="Contact · Utah AI Safety Hub">
+    <meta property="og:description" content="A community on the Wasatch Front for people who want to help advanced AI go well: reading groups, co-working, and events in Salt Lake City and Utah County.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://utah-ai-safety-hub.github.io/contact.html">
+    <meta property="og:site_name" content="Utah AI Safety Hub">
+    <link rel="canonical" href="https://utah-ai-safety-hub.github.io/contact.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script>
+        (function () {
+            var stored = null;
+            try { stored = localStorage.getItem('theme'); } catch (e) {}
+            var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">Utah <span>AI Safety</span> Hub</a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="get-involved.html">Get involved</a>
+                <a href="events.html">Events</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+                <button class="theme-toggle" type="button">Dark</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-head">
+            <div class="wrap">
+                <h1>Join the mailing list</h1>
+                <p class="lede">Sign up to hear about our first events, reading groups, and co-working days. We’ll only email you about the hub.</p>
+            </div>
+        </div>
+
+        <section id="signup">
+            <div class="wrap">
+                <form id="signup-form" class="signup">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="city">Where are you based?</label>
+                        <select id="city" name="city" required>
+                            <option value="">Choose one</option>
+                            <option>Salt Lake City area</option>
+                            <option>Utah County (Provo, Orem, Lehi)</option>
+                            <option>Elsewhere in Utah</option>
+                            <option>Outside Utah</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="background">Background</label>
+                        <select id="background" name="background" required>
+                            <option value="">Choose one</option>
+                            <option>Student</option>
+                            <option>Technical (engineering, research, data)</option>
+                            <option>Policy, law, or government</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <fieldset>
+                        <legend>What are you interested in? <span class="optional">(optional)</span></legend>
+                        <div class="choices">
+                            <label><input type="checkbox" name="interests" value="Reading group"> Reading group</label>
+                            <label><input type="checkbox" name="interests" value="Co-working"> Co-working</label>
+                            <label><input type="checkbox" name="interests" value="Events"> Events</label>
+                            <label><input type="checkbox" name="interests" value="Volunteering"> Volunteering</label>
+                        </div>
+                    </fieldset>
+                    <div class="field">
+                        <label for="referral">How did you hear about us? <span class="optional">(optional)</span></label>
+                        <input id="referral" name="referral" type="text">
+                    </div>
+                    <button class="button" type="submit">Sign up</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                    <p class="form-note">If you’d like to partner with us, host an event, or help organize, tick “Volunteering” and we’ll reach out.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>Utah AI Safety Hub · Salt Lake City and Utah County</span>
+            <span>Organized by <a href="https://emiliobarkett.github.io/">Emilio Barkett</a> · <a href="contact.html">Join the mailing list</a></span>
+        </div>
+    </footer>
+    <script src="site.js"></script>
+</body>
+</html>

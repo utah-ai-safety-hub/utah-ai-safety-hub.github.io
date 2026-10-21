@@ -25,15 +25,17 @@ jobs:
         run: python3 tools/build.py
       - name: Commit rebuilt pages
         run: |
-          if [ -z "$(git status --porcelain -- '*.html')" ]; then
+          if [ -z "$(git status --porcelain -- '*.html' sitemap.xml robots.txt)" ]; then
             echo "Pages already match src/."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-            git add -- '*.html'
+            git add -- '*.html' sitemap.xml robots.txt
             git commit -m "Rebuild pages from src/"
             git push
           fi
+      - name: Keep source files off the live site
+        run: rm -rf src tools .github README.md
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .

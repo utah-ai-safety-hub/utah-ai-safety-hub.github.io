@@ -10,8 +10,8 @@ The pages are plain HTML and CSS. Each page's content lives in `src/`, and `tool
 
 | To change | Edit |
 |---|---|
-| A page's content | `src/pages/<page>.html` (the first line is the page's title) |
-| The announcement bar, navigation, or site description | `src/site.json` |
+| A page's content | `src/pages/<page>.html` (line 1 is the page title, line 2 the summary shown in Google results) |
+| The announcement bar, navigation, home page title, site description, or social links (`same_as`) | `src/site.json` |
 | The header, footer, or `<head>` on every page | `src/layout.html` |
 | Colors, fonts, and layout | `style.css` |
 | Interactive behavior (theme toggle, contour readout) | `site.js` |

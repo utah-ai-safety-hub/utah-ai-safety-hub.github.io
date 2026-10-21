@@ -315,22 +315,11 @@ a.card:hover { color: var(--text); transform: translateY(-2px); }
 }
 .status.open { background: var(--accent-soft); color: var(--accent-strong); }
 
-/* Numbered blocks (a real sequence or set: mission, why now, how we work) */
+/* Three-column text blocks (mission, why now, how we work) */
 .numbered {
-    counter-reset: num;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 32px;
-}
-.numbered > div { counter-increment: num; }
-.numbered > div::before {
-    content: counter(num, decimal-leading-zero);
-    display: block;
-    font-family: var(--serif);
-    color: var(--accent);
-    font-size: 1.6rem;
-    line-height: 1;
-    margin-bottom: 14px;
 }
 .numbered h3 { margin-bottom: 0.3em; }
 .numbered p { margin: 0; color: var(--muted); }

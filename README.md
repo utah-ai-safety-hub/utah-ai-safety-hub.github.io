@@ -48,6 +48,10 @@ The contours and logo come from real elevation data for Mount Timpanogos: [AWS T
 
 The Join page (`src/pages/contact.html`) embeds an Airtable form. Submissions land in the **Sign-ups** table of the hub's Airtable base. To change the questions, edit the form in Airtable; the website picks up the change automatically.
 
+## Search engines
+
+`tools/build.py` writes `sitemap.xml` and `robots.txt`. `google62076370fd2f8879.html` verifies the site in Google Search Console; don't delete or rename it.
+
 ## Custom domain
 
 The site uses the custom domain utahaisafety.org, registered and managed in Cloudflare (DNS only, not proxied). GitHub Pages issues the HTTPS certificate. The domain is verified for the utah-ai-safety-hub organization under Settings → Pages.

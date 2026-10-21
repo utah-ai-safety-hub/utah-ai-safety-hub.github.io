@@ -2,7 +2,7 @@
 
 Website for the Utah AI Safety Hub, a community for people across Utah who want advanced AI to go well.
 
-Live at https://utah-ai-safety-hub.github.io
+Live at https://utahaisafety.org
 
 ## How the site is built
 
@@ -50,4 +50,4 @@ The form on `contact.html` posts to the URL in `FORM_ENDPOINT` at the top of `si
 
 ## Custom domain
 
-When the domain is ready, add it under **Settings → Pages → Custom domain**, point the domain's DNS at GitHub Pages, and change `site_url` in `src/site.json`.
+The site uses the custom domain utahaisafety.org, registered and managed in Cloudflare (DNS only, not proxied). GitHub Pages issues the HTTPS certificate. The domain is verified for the utah-ai-safety-hub organization under Settings → Pages.

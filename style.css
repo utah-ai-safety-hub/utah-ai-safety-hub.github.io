@@ -1,48 +1,48 @@
 /* Utah AI Safety Hub. Colors are tokens so light and dark themes stay in sync. */
 :root {
-    --bg: #f7f9fb;
+    --bg: #f7f8f4;
     --surface: #ffffff;
-    --text: #1f2328;
-    --muted: #5b616b;
-    --border: #dde4ea;
-    --accent: #2f5d8a;        /* Wasatch sky blue */
-    --accent-strong: #22476b;
-    --accent-soft: #e3ecf5;
+    --text: #1f241f;
+    --muted: #5a6359;
+    --border: #dfe4dc;
+    --accent: #3d6b4f;        /* Wasatch pine green */
+    --accent-strong: #2c5039;
+    --accent-soft: #e2ece4;
     --on-accent: #ffffff;
-    --ridge-1: #cfdbe6;
-    --ridge-2: #a9bdd0;
+    --ridge-1: #cdd9cc;
+    --ridge-2: #a8bca9;
     --serif: "Fraunces", Georgia, "Times New Roman", serif;
     --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-        --bg: #14181d;
-        --surface: #1b2027;
-        --text: #e8e6e3;
-        --muted: #a3a8b0;
-        --border: #2b323b;
-        --accent: #7fb0de;
-        --accent-strong: #a6c8ea;
-        --accent-soft: #1d2b3a;
-        --on-accent: #0f1720;
-        --ridge-1: #222831;
-        --ridge-2: #2a323d;
+        --bg: #141813;
+        --surface: #1b201a;
+        --text: #e5e8e3;
+        --muted: #a0a99e;
+        --border: #2c332b;
+        --accent: #82bf96;
+        --accent-strong: #a6d4b3;
+        --accent-soft: #1d2c21;
+        --on-accent: #0e170f;
+        --ridge-1: #212820;
+        --ridge-2: #2a3329;
     }
 }
 
 :root[data-theme="dark"] {
-    --bg: #14181d;
-    --surface: #1b2027;
-    --text: #e8e6e3;
-    --muted: #a3a8b0;
-    --border: #2b323b;
-    --accent: #7fb0de;
-    --accent-strong: #a6c8ea;
-    --accent-soft: #1d2b3a;
-    --on-accent: #0f1720;
-    --ridge-1: #222831;
-    --ridge-2: #2a323d;
+    --bg: #141813;
+    --surface: #1b201a;
+    --text: #e5e8e3;
+    --muted: #a0a99e;
+    --border: #2c332b;
+    --accent: #82bf96;
+    --accent-strong: #a6d4b3;
+    --accent-soft: #1d2c21;
+    --on-accent: #0e170f;
+    --ridge-1: #212820;
+    --ridge-2: #2a3329;
 }
 
 * { box-sizing: border-box; }

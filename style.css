@@ -487,7 +487,6 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); ou
 .footer-grid li { margin-bottom: 4px; }
 .site-footer a { color: var(--muted); text-decoration: none; }
 .site-footer a:hover { color: var(--text); }
-.footer-note { margin-top: 32px; }
 
 @media (max-width: 640px) {
     body { font-size: 16px; }

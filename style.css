@@ -321,7 +321,7 @@ a.card:hover { color: var(--text); transform: translateY(-2px); }
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 32px;
 }
-.numbered h3 { margin-bottom: 0.3em; }
+.numbered h3 { margin-bottom: 0.3em; color: var(--accent); }
 .numbered p { margin: 0; color: var(--muted); }
 
 /* Callout panel */

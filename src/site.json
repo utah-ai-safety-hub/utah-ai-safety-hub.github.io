@@ -3,7 +3,9 @@
   "home_title": "Utah AI Safety Hub · AI safety community across Utah",
   "description": "A community for people across Utah who want advanced AI to go well. Reading groups, co-working, and events, starting in Salt Lake City.",
   "email": "hello@utahaisafety.org",
-  "same_as": [],
+  "same_as": [
+    "https://www.linkedin.com/company/utah-ai-safety-hub/"
+  ],
   "announcement": "Now forming: our first reading group and kickoff event in Salt Lake City. <a href=\"contact.html#signup\">Get notified →</a>",
   "nav": [
     {

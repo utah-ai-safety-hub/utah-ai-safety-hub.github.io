@@ -15,6 +15,10 @@ You can edit any page in the GitHub web editor (open the file and click the penc
 - **Shared header and footer:** these are copied into every page, so change all six HTML files when you edit them.
 - **Colors and fonts:** these are set at the top of `style.css`.
 
+## Hero contours
+
+The home page background shows real contour lines of Mount Timpanogos (every 100 m, heavier every 500 m) in `images/contours-timpanogos.svg`. They were generated from [AWS Terrain Tiles](https://registry.opendata.aws/terrain-tiles/), which are built mainly from USGS 3DEP elevation data. The site's accent color fills the lines through a CSS mask, so they follow the color scheme automatically.
+
 ## Custom domain
 
 When you have a domain such as utahaisafety.org, add a `CNAME` file containing the domain, then point the domain's DNS at GitHub Pages. Also update the `og:url` and canonical links in each page.

@@ -313,6 +313,13 @@ a.card:hover { color: var(--text); transform: translateY(-2px); }
 .card .facts.link-chips a:hover { background: var(--accent-soft); }
 .card h3 a { color: inherit; text-decoration: none; }
 .card h3 a:hover { color: var(--accent); }
+/* Fellowship progression on the Resources page */
+.ladder { margin-top: 20px; }
+.stage > p { margin-bottom: 16px; }
+.programs-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.programs-list a { font-weight: 600; text-decoration: none; }
+.programs-list a:hover { text-decoration: underline; }
+.programs-list .meta { display: block; font-size: 0.86rem; }
 .card-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; }
 
 .tag {

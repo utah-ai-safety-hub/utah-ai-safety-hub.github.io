@@ -417,6 +417,16 @@ textarea {
     font: inherit;
     padding: 10px 12px;
 }
+/* Browsers round form controls by default; keep them square like everything else. */
+input, select, textarea, button { border-radius: 0; }
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%238a9388' stroke-width='1.6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 38px;
+}
 input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 .choices { display: flex; flex-wrap: wrap; gap: 6px 20px; }
 .choices label { display: flex; align-items: center; gap: 6px; font-weight: 400; }

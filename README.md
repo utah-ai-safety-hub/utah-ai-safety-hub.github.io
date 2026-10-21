@@ -14,7 +14,7 @@ The pages are plain HTML and CSS. Each page's content lives in `src/`, and `tool
 | The announcement bar, navigation, or site description | `src/site.json` |
 | The header, footer, or `<head>` on every page | `src/layout.html` |
 | Colors, fonts, and layout | `style.css` |
-| Interactive behavior (theme toggle, sign-up form, contour readout) | `site.js` |
+| Interactive behavior (theme toggle, contour readout) | `site.js` |
 
 Don't edit the HTML files in the repository root; the next build overwrites them.
 
@@ -46,7 +46,7 @@ The contours and logo come from real elevation data for Mount Timpanogos: [AWS T
 
 ## Sign-up form
 
-The form on `contact.html` posts to the URL in `FORM_ENDPOINT` at the top of `site.js`. Until it is set, the form tells visitors that sign-ups open soon.
+The Join page (`src/pages/contact.html`) embeds an Airtable form. Submissions land in the **Sign-ups** table of the hub's Airtable base. To change the questions, edit the form in Airtable; the website picks up the change automatically.
 
 ## Custom domain
 

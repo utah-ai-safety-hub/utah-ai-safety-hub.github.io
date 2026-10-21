@@ -8,59 +8,11 @@
 
         <section id="signup">
             <div class="wrap">
-                <form id="signup-form" class="signup">
-                    <div class="field">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" autocomplete="name" required>
-                    </div>
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" autocomplete="email" required>
-                    </div>
-                    <div class="field">
-                        <label for="city">Where are you based?</label>
-                        <select id="city" name="city" required>
-                            <option value="">Choose one</option>
-                            <option>Salt Lake County</option>
-                            <option>Utah County (Provo, Orem, Lehi)</option>
-                            <option>Davis or Weber County (Ogden, Layton)</option>
-                            <option>Cache Valley (Logan)</option>
-                            <option>Southern Utah (St. George, Cedar City)</option>
-                            <option>Elsewhere in Utah</option>
-                            <option>Outside Utah</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label for="background">Background</label>
-                        <select id="background" name="background" required>
-                            <option value="">Choose one</option>
-                            <option>Student</option>
-                            <option>Technical (engineering, research, data)</option>
-                            <option>Policy, law, or government</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <fieldset>
-                        <legend>What are you interested in? <span class="optional">(optional)</span></legend>
-                        <div class="choices">
-                            <label><input type="checkbox" name="interests" value="Reading group"> Reading group</label>
-                            <label><input type="checkbox" name="interests" value="Co-working"> Co-working</label>
-                            <label><input type="checkbox" name="interests" value="Events"> Events</label>
-                            <label><input type="checkbox" name="interests" value="Campus group"> Campus group</label>
-                            <label><input type="checkbox" name="interests" value="Volunteering"> Volunteering</label>
-                        </div>
-                    </fieldset>
-                    <div class="field">
-                        <label for="referral">How did you hear about us? <span class="optional">(optional)</span></label>
-                        <input id="referral" name="referral" type="text">
-                    </div>
-                    <div class="field">
-                        <label for="message">Anything else? <span class="optional">(optional)</span></label>
-                        <textarea id="message" name="message" rows="3" placeholder="For example, an event you could host or a group you’d like to start"></textarea>
-                    </div>
-                    <button class="button" type="submit">Sign up</button>
-                    <p class="form-status" role="status" aria-live="polite"></p>
-                </form>
+                <!-- Sign-ups go to the "Sign-ups" table in the hub's Airtable base. -->
+                <div class="signup-embed">
+                    <iframe class="airtable-embed" src="https://airtable.com/embed/appQ7alcdk4UIZXq8/pagwErgL3IaiBIfN5/form" title="Mailing list sign-up form"></iframe>
+                </div>
+                <p class="form-note">Form not loading? <a href="https://airtable.com/appQ7alcdk4UIZXq8/pagwErgL3IaiBIfN5/form">Open it in a new tab</a>.</p>
             </div>
         </section>
 

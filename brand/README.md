@@ -20,6 +20,8 @@ The logo is a tile: a solid square with five contour lines from the summit of Mo
 | `svg/uash-logo-stacked-*.svg` | Tile above the name in spaced capitals. Posters, title slides, banners, merch. |
 | `png/` | The same files as PNGs. Tiles at 512, 1024, and 2048 px; small tile at 16–192 px; lockups with transparent backgrounds. |
 | `png/og-image.png` | 1200 × 630 link-preview image. |
+| `social/linkedin-banner-company.png` | LinkedIn company page banner (1128 × 191, rendered at 2×). Use `png/uash-tile-pine-1024.png` as the logo. |
+| `social/linkedin-banner-personal.png` | LinkedIn personal profile banner (1584 × 396). |
 | `../favicon.ico`, `../favicon.svg`, `../apple-touch-icon.png` | Browser and phone icons used by the website. |
 
 Prefer the SVGs: they stay sharp at any size. The name is converted to outlines, so the files look the same on computers without the fonts. The fonts are Newsreader (the name) and Geist (spaced capitals), both free under the SIL Open Font License.

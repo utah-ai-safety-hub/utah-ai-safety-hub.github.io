@@ -1,2 +1,5 @@
 ideas.txt
 .DS_Store
+
+# Downloaded elevation tiles and fonts for tools/
+tools/.cache/

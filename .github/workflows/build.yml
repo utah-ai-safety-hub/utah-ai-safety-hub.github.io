@@ -1,0 +1,52 @@
+# Rebuild the pages from src/ and publish the site on every push to main.
+# Edit src/pages/*.html or src/site.json (in the GitHub web editor is fine) and this does the rest.
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build pages
+        run: python3 tools/build.py
+      - name: Commit rebuilt pages
+        run: |
+          if [ -z "$(git status --porcelain -- '*.html')" ]; then
+            echo "Pages already match src/."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+            git add -- '*.html'
+            git commit -m "Rebuild pages from src/"
+            git push
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

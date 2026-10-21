@@ -1,28 +1,53 @@
 # Utah AI Safety Hub
 
-Website for the Utah AI Safety Hub, a new community on the Wasatch Front for people who want to help advanced AI go well. It runs reading groups, co-working, and events in Salt Lake City and Utah County.
+Website for the Utah AI Safety Hub, a community for people across Utah who want advanced AI to go well.
 
 Live at https://utah-ai-safety-hub.github.io
 
-The site is plain HTML and CSS with no build step. GitHub Pages serves it from the `main` branch.
+## How the site is built
 
-## Editing
+The pages are plain HTML and CSS. Each page's content lives in `src/`, and `tools/build.py` wraps it in the shared header and footer to produce the HTML files in the repository root. A GitHub Action ([`.github/workflows/build.yml`](.github/workflows/build.yml)) runs the build and publishes the site on every push to `main`, so changes go live about a minute after you save them.
 
-You can edit any page in the GitHub web editor (open the file and click the pencil icon).
+| To change | Edit |
+|---|---|
+| A page's content | `src/pages/<page>.html` (the first line is the page's title) |
+| The announcement bar, navigation, or site description | `src/site.json` |
+| The header, footer, or `<head>` on every page | `src/layout.html` |
+| Colors, fonts, and layout | `style.css` |
+| Interactive behavior (theme toggle, sign-up form, contour readout) | `site.js` |
 
-- **Events:** edit `events.html`. Copy an existing `<div class="event">` block and change the date, title, place, and description. Move finished events under "Past".
-- **Sign-up form:** the form on `contact.html` posts to the URL in `FORM_ENDPOINT` at the top of `site.js`. Create a free form at [Formspree](https://formspree.io), then paste its URL there. Until then, the form tells visitors that sign-ups open soon.
-- **Shared header and footer:** these are copied into every page, so change all six HTML files when you edit them.
-- **Colors and fonts:** these are set at the top of `style.css`.
+Don't edit the HTML files in the repository root; the next build overwrites them.
 
-## Logo
+### Editing in the browser
 
-The logo kit (SVG and PNG files, favicons, and usage notes) is in [`brand/`](brand/README.md).
+Open a file in `src/` on GitHub, click the pencil icon, make the change, and commit. The Action rebuilds and publishes the site. Watch progress under the repository's **Actions** tab.
 
-## Hero contours
+- **Events:** in `src/pages/events.html`, copy an existing `<div class="event">` block and change the date, title, place, and description. Move finished events under "Past".
+- **Announcement bar:** change `announcement` in `src/site.json`.
 
-The home page background shows real contour lines of Mount Timpanogos (every 100 m, heavier every 500 m) in `images/contours-timpanogos.svg`. They were generated from [AWS Terrain Tiles](https://registry.opendata.aws/terrain-tiles/), which are built mainly from USGS 3DEP elevation data. The site's accent color fills the lines through a CSS mask, so they follow the color scheme automatically.
+### Building locally
+
+```sh
+python3 tools/build.py            # rebuild the pages (no dependencies)
+python3 -m http.server            # preview at http://localhost:8000
+```
+
+## Images and logo
+
+These are generated once and committed; rerun the scripts only to change them. They need `pip install -r tools/requirements.txt`. Downloaded elevation tiles and fonts are cached in `tools/.cache/` (not committed).
+
+| Script | Produces |
+|---|---|
+| `tools/hero_contours.py` | `images/contours-timpanogos.svg` (home page contours) and `images/timpanogos-elevation.bin` (the live elevation readout) |
+| `tools/logo.py` | `brand/svg/` (the logo kit) |
+| `tools/logo_png.sh` | `brand/png/`, `favicon.ico`, `favicon.svg`, `apple-touch-icon.png` (needs Google Chrome) |
+
+The contours and logo come from real elevation data for Mount Timpanogos: [AWS Terrain Tiles](https://registry.opendata.aws/terrain-tiles/), built mainly from USGS 3DEP data. The logo kit and its usage notes are in [`brand/`](brand/README.md).
+
+## Sign-up form
+
+The form on `contact.html` posts to the URL in `FORM_ENDPOINT` at the top of `site.js`. Until it is set, the form tells visitors that sign-ups open soon.
 
 ## Custom domain
 
-When you have a domain such as utahaisafety.org, add a `CNAME` file containing the domain, then point the domain's DNS at GitHub Pages. Also update the `og:url` and canonical links in each page.
+When the domain is ready, add it under **Settings → Pages → Custom domain**, point the domain's DNS at GitHub Pages, and change `site_url` in `src/site.json`.

@@ -101,8 +101,8 @@ h3 { font-size: 1.3rem; }
     align-items: center;
     justify-content: space-between;
     gap: 8px 24px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    max-width: 1280px;
+    padding: 26px 60px;
 }
 .brand {
     display: inline-flex;
@@ -115,6 +115,9 @@ h3 { font-size: 1.3rem; }
     white-space: nowrap;
 }
 .brand img { display: block; }
+/* Header logo sized like Kairos's: a large serif name with the tile about its cap height. */
+.site-header .brand { font-size: 2.125rem; line-height: 1.2; gap: 13px; letter-spacing: -0.01em; }
+.site-header .brand img { width: 28px; height: 28px; }
 /* Pine tile on light pages, mint tile on dark. */
 .brand .logo-dark { display: none; }
 @media (prefers-color-scheme: dark) {
@@ -150,7 +153,7 @@ h3 { font-size: 1.3rem; }
     position: relative;
     display: grid;
     place-items: center;
-    min-height: calc(100svh - 110px);
+    min-height: calc(100svh - 132px);
     padding: 64px 0 96px;
     overflow: hidden;
     text-align: center;
@@ -463,7 +466,10 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); ou
     body { font-size: 16px; }
     .wrap { padding: 0 16px; }
     section { padding: 56px 0; }
-    .hero { min-height: calc(100svh - 150px); padding: 48px 0 88px; }
+    .hero { min-height: calc(100svh - 160px); padding: 48px 0 88px; }
+    .site-header .wrap { padding: 18px 16px; }
+    .site-header .brand { font-size: 1.6rem; gap: 10px; }
+    .site-header .brand img { width: 24px; height: 24px; }
     .topo { -webkit-mask-image: linear-gradient(to bottom, #000, transparent 30%, transparent 70%, #000); mask-image: linear-gradient(to bottom, #000, transparent 30%, transparent 70%, #000); }
     .cards.two, .program, .event { grid-template-columns: 1fr; }
     .scroll-cue { bottom: 40px; }
